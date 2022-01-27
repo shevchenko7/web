@@ -1,0 +1,30 @@
+/* tab 관련 커스터마이징 */
+/* 2016. 11. 3. */
+.dhxtabbar_base_material div.dhxtabbar_tabs {
+    border: none;
+    border-width: 0px;
+    background-color: #E9EEF4;
+    font-size: 13px;
+    color: #626d83;
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab {
+    background-color: inherit;;
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab.dhxtabbar_tab_actv {
+    color:inherit;
+    background-color: #fff;
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab div.dhxtabbar_tab_text {
+    height: inherit;
+    background-color: inherit;
+    border-right: 1px solid rgba(255,255,255,0.6);
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab div.dhxtabbar_tab_text:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab div.dhxtabbar_tab_close {
+    opacity: .25;
+}
+.dhxtabbar_base_material div.dhxtabbar_tabs div.dhxtabbar_tabs_base div.dhxtabbar_tab div.dhxtabbar_tab_close:hover {
+    opacity: 1;
+}

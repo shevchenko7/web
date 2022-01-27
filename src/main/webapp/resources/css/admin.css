@@ -1,0 +1,423 @@
+@charset "utf-8";
+/**
+ * 어드민 공통
+*/
+/* 2016-10-18 iframe 스타일 */
+.admin-frame-area {overflow:hidden;width:auto;padding:20px;word-wrap:break-word;text-overflow:ellipsis;-ms-word-break:break-all;}
+.layout.container .top-border.admin-style{height:0;}
+
+/**
+ * 조회
+ */
+.admin-total-result + .admin-search-area {margin-top:-1px;}
+.admin-search-area {padding:30px 0px 30px 30px;border-bottom:1px solid #ddd;*zoom:1;}
+.admin-search-area:before,
+.admin-search-area:after {display:table;content:'';}
+.admin-search-area:after {clear:both;}
+.admin-search-area .search-option {float:left;width:983px;}
+.admin-search-area .search-option select {width:150px !important;margin-right:5px;}
+.admin-search-area .search-option .calendar {width:110px !important;}
+.admin-search-area .search-option .list {margin-top:20px;*zoom:1;}
+.admin-search-area .search-option .list:first-child {margin-top:0;}
+.admin-search-area .search-option .list:before,
+.admin-search-area .search-option .list:after {display:table;content:'';}
+.admin-search-area .search-option .list:after {clear:both;}
+.admin-search-area .search-option .list > dt {float:left;position:relative;width:91px;margin-top:4px;padding-left:8px;font-weight:bold;color:#666;}
+.admin-search-area .search-option .list > dt:before {display:block;content:'';position:absolute;top:7px;left:0px;width:2px;height:2px;background-color:#666;}
+.admin-search-area .search-option .list > dd {float:left;}
+.admin-search-area .search-option .list .swung-dash {display:inline-block;position:relative;top:3px;width:17px;text-align:center;}
+.admin-search-area .search-option .list:last-child > dd input[type=text] {width:669px;}
+.admin-search-area .search-option .duration-button {float:left;margin:2px 0 0 5px;border:1px solid #ccc;border-width:1px 0px;}
+.admin-search-area .search-option .duration-button ul::before,
+.admin-search-area .search-option .duration-button ul::after {display:table;content:'';}
+.admin-search-area .search-option .duration-button ul::after {clear:both;}
+.admin-search-area .search-option .duration-button ul li {float:left;border-right:1px solid #eee;}
+.admin-search-area .search-option .duration-button ul li:first-child {border-left:1px solid #ccc}
+.admin-search-area .search-option .duration-button ul li:last-child {border-right-color:#ccc}
+.admin-search-area .search-option .duration-button label {position:relative;}
+.admin-search-area .search-option .duration-button label > input[type=radio] {*left:-9999px;}
+.admin-search-area .search-option .duration-button label > input[type=radio] + span {display:inline-block;position:relative;z-index:1;width:38px;height:20px;padding-top:1px;font-size:11px;line-height:21px;color:#666;text-align:center;cursor:pointer;}
+.admin-search-area .search-option .duration-button label:first-child span {border-left:0px !important;}
+.admin-search-area .search-option .duration-button label > input[type=radio]:checked + span {color:#fff;}
+.admin-search-area .search-option .duration-button label > input[type=radio]:checked + span:before {display:block;content:'';position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;z-index:-1;background-color:#47aab1;}
+.admin-search-area .search-button {float:right;width:198;padding:3px 0 4px 68px;border-left:1px solid #eee;}
+.admin-search-area .search-button .button {display:block;margin:10px 0 0;}
+.admin-search-area .search-button .button:first-child {margin-top:0;}
+.admin-search .ui.table .td-max-width-md,
+.order-search .ui.table .td-max-width-md {max-width:204px;}
+.order-search .admin-search-area .search-option {margin-top:23px;}
+
+/**
+ * 조회검색 결과 타이틀
+ */
+.search-result-title {position:relative;margin:40px 0 15px;*zoom:1;}
+.search-result-title:before,
+.search-result-title:after {display:table;content:'';}
+.search-result-title:after {clear:both;}
+.search-result-title.no-border {margin-bottom:15px;padding-bottom:0;border-bottom:0;}
+.search-result-title .tit-result {float:left;padding:0;border-bottom:0;margin-bottom:0;font-size:14px;line-height:23px;color:#666;}
+.search-result-title .tit-result .num {position:relative;top:1px;font-family:Tahoma;font-weight:normal;font-size:18px;color:#ee5555;}
+
+
+/**
+* 상세
+*/
+.admin-detail input {width:166px;}
+.admin-detail .admin-detail-table th {padding:15px 5px;}
+
+/* 옵션정보 스타일 */
+.admin-option-ticket-list {margin-top:13px;padding:17px 18px 16px;background-color:#f9f9f9}
+.admin-option-ticket-list:before,
+.admin-option-ticket-list:after {display:table;content:'';}
+.admin-option-ticket-list:after {clear:both;}
+.admin-option-ticket-list li {position:relative;padding:0px 0px 9px 11px;color:#666;}
+.admin-option-ticket-list li:last-child {position:relative;padding:0px 0px 0px 11px;}
+.admin-option-ticket-list li:before {display:block;content:'';position:absolute;top:3px;left:0px;width:5px;height:5px;border-bottom:1px solid #999;border-left:1px solid #999;}
+
+/* 라디오버튼 스타일 */
+.admin-detail .refund-method .radio-area {position:relative;padding:11px 18px;background-color:#f9f9f9;font-size:0px;letter-spacing:0px;word-spacing:0px;}
+.admin-detail .refund-method .radio-area .button {position:absolute;top:10px;right:18px;}
+
+
+/* 확인용 테이블 */
+.admin-refund-confirm-table {border:2px solid #eee;}
+.admin-refund-confirm-table table caption {display:none;font-size:0px;}
+.admin-refund-confirm-table table th,
+.admin-refund-confirm-table table td {background-image:url(//image.wemakeprice.com/images/resources/mng/pages/claim/ico-table.png);background-repeat:no-repeat;}
+.admin-refund-confirm-table table th {height:54px;background-color:#fff;font-family:Tahoma;font-size:20px;text-align:right;}
+.admin-refund-confirm-table table td {height:59px;background-color:#f9f9f9}
+.admin-refund-confirm-table table th em {position:relative;top:-1px;font-size:16px;font-weight:bold;}
+.admin-refund-confirm-table table th.order-price {padding-right:29px;background-position:0px 0px;}
+.admin-refund-confirm-table table th.dc-price {padding-right:30px;background-position:0px -54px;}
+.admin-refund-confirm-table table th.refund-total-price {padding-right:39px;background-position:0px -108px;}
+.admin-refund-confirm-table table td.order-price {padding:0px 29px 0px 39px;background:#f9f9f9;}
+.admin-refund-confirm-table table td.dc-price {padding:0px 30px 0px 52px;background-position:0px -162px;}
+.admin-refund-confirm-table table td.refund-total-price {padding:0px 39px 0px 51px;background-position:0px -162px;}
+.admin-refund-confirm-table table dl dt,
+.admin-refund-confirm-table table dl dd {line-height:14px;}
+.admin-refund-confirm-table table dl dt {float:left;color:#999;font-size:11px;}
+.admin-refund-confirm-table table dl dd {overflow:hidden;display:block;font-size:12px;text-align:right;}
+
+
+/* 숫자 변경 테이블 */
+.admin-detail .refund-change-price {background-color:#f3f3f3;}
+.admin-detail .refund-change-price .checkbox-area {padding:13px 20px;}
+.admin-detail .refund-change-price .contents {padding:7px 20px 50px 20px;}
+.admin-detail .refund-change-price .contents > .inner {overflow:hidden;padding:40px;background-color:#fff;}
+.admin-detail .refund-change-price .contents > .inner table th {border-top-color:#ddd;}
+.admin-detail .refund-change-price .contents > .inner table td input {text-align:right;}
+.admin-detail .refund-change-price .contents > .inner table td .fa-plus {position:relative;top:1px;margin:0px 19px 0px 18px;color:#ccc;font-size:16px;vertical-align:middle;}
+.admin-detail .refund-change-price .contents > .inner table td.seting {padding:0px 120px 0px 0px;text-align:right;}
+.admin-detail .refund-change-price .contents > .inner table td.seting input {width:77px}
+.admin-detail .refund-change-price .contents > .inner .change-reason select {width:192px;}
+.admin-detail .refund-change-price .contents > .inner .change-reason input {width:512px;margin-left:5px;text-align:left !important;}
+.admin-detail .refund-change-price .contents > .inner .change-reason .msg {margin-top:7px;}
+
+
+/* 내역 보기 버튼 */
+.aside-consultation .ico-consultation {background:url(//image.wemakeprice.com/images/resources/mng/pages/claim/ico-consultation.png?16072801) no-repeat;}
+.aside-consultation .button-consultation {display:block;overflow:hidden;background:url(//image.wemakeprice.com/images/resources/mng/pages/claim//button-consultation.png?16072801) no-repeat;text-indent:-9999px;}
+.aside-consultation {position:absolute;top:0;right:-50px;}
+.aside-consultation > .inner-consultation {position:fixed;bottom:80px;}
+.aside-consultation .button-view {width:76px;height:87px;background-position:0 0;}
+
+/* 내역 보기 창 */
+.aside-consultation .chat-consultation {display:block;position:absolute;right:126px;bottom:0;width:358px;border:1px solid #dde3e8;background-color:#fff;box-shadow:2px 3px 6px rgba(0, 0, 0, .18);}
+.aside-consultation.active .chat-consultation {display:block;}
+.aside-consultation .chat-head {position:relative;padding:14px 18px;border-bottom:1px solid #eee;*zoom:1;}
+.aside-consultation .chat-head:before,
+.aside-consultation .chat-head:after {display:table;content:'';}
+.aside-consultation .chat-head:after {clear:both;}
+.aside-consultation .chat-head .ico-w {float:left;width:32px;height:32px;background-position:0 0;}
+.aside-consultation .chat-head .title {float:left;padding-left:8px;font-family:'noto';font-size:16px;line-height:32px;}
+.aside-consultation .chat-head .sub-title {float:left;position:relative;top:5px;padding-left:4px;font-size:11px;line-height:32px;}
+.aside-consultation .chat-head .button-consultation.close {position:absolute;top:21px;right:18px;width:19px;height:19px;background-position:0 -100px;}
+.aside-consultation .chat-cont {overflow-x:hidden;overflow-y:auto;position:relative;height:363px;border-bottom:1px solid #ddd;background-color:#f0f4f5;}
+.aside-consultation .chat-cont > .inner-cont {padding:18px;*zoom:1;}
+.aside-consultation .chat-cont > .inner-cont:before,
+.aside-consultation .chat-cont > .inner-cont:after {display:table;content:'';}
+.aside-consultation .chat-cont > .inner-cont:after {clear:both;}
+.aside-consultation .chat-cont .message {float:left;position:relative;max-width:180px;margin-top:30px;padding:10px 10px 8px;border-radius:4px;background-color:#fff;font-size:11px;line-height:16px;color:#80999a;clear:both;}
+.aside-consultation .chat-cont .message:first-child {margin-top:0;}
+.aside-consultation .chat-cont .message.other {margin-left:8px;}
+.aside-consultation .chat-cont .message.my {float:right;margin-right:8px;background-color:#73aeb9;color:#fff;}
+.aside-consultation .chat-cont .message.other + .message.other,
+.aside-consultation .chat-cont .message.my + .message.my {margin-top:5px;}
+.aside-consultation .chat-cont .divider + .message {margin-top:15px;}
+.aside-consultation .chat-cont .message:before {position:absolute;top:8px;width:0;height:0;border-width:6px 8px;border-style:solid;border-color:transparent;content:'';}
+.aside-consultation .chat-cont .message.other:before {left:-8px;border-left-width:0;border-right-color:#fff;}
+.aside-consultation .chat-cont .message.my:before {right:-8px;border-right-width:0;border-left-color:#73aeb9;}
+.aside-consultation .chat-cont .message .time {position:absolute;bottom:-3px;font-size:11px;color:#999;white-space:nowrap;}
+.aside-consultation .chat-cont .message.other .time {left:100%;margin-left:7px;}
+.aside-consultation .chat-cont .message.my .time {right:100%;margin-right:7px;}
+.aside-consultation .chat-cont .divider {float:left;position:relative;width:100%;margin-top:38px;text-align:center;clear:both;}
+.aside-consultation .chat-cont .divider .line {position:absolute;top:50%;right:0;left:0;height:1px;background-color:#ddd;}
+.aside-consultation .chat-cont .divider .txt {position:relative;padding:0 9px;background-color:#f0f2f5;font-size:11px;color:#999;}
+.aside-consultation .chat-cont .refresh {position:absolute;z-index:1;bottom:40px;right:40px;}
+.aside-consultation .chat-cont .refresh button {position:fixed;width:30px;height:30px;border:1px solid #ddd;background-color:#fff;background-image:url(//image.wemakeprice.com/images/resources/mng/pages/claim/ico-refresh.png);background-repeat:no-repeat;background-position:50% 50%;text-indent:-9999em;}
+
+
+.aside-consultation .chat-status {position:absolute;bottom:103px;right:0px;left:0px;padding:18px 18px 18px 18px;border-top:1px solid #eee;background-color:#fff}
+.aside-consultation .chat-status > p {position:relative;padding-left:21px;color:#5da2ae;line-height:15px;font-size:11px;}
+.aside-consultation .chat-status p.fa-exclamation-circle:before {position:absolute;top:0px;left:0px;color:#9cd1d5;font-size:16px;}
+.aside-consultation .chat-write {position:relative;padding:16px 110px 16px 16px;border-top:1px solid #f2f2f2;*zoom:1;}
+.aside-consultation .chat-write:before,
+.aside-consultation .chat-write:after {display:table;content:'';}
+.aside-consultation .chat-write:after {clear:both;}
+.aside-consultation .chat-write .input {width:100%;height:70px;padding:0;border:0;resize:none;box-shadow:none;}
+.aside-consultation .chat-write .button-send {overflow:hidden;position:absolute;top:16px;right:16px;width:82px;height:70px;border:1px solid #d6e7ea;background-color:#fff;outline:none;font-family:'noto';font-size:14px;color:#d6e7ea;cursor:default;}
+.aside-consultation .chat-write .button-send.active {border-color:#5da2ae;color:#5da2ae;cursor:pointer;}
+
+/* 주문 상세 폼 */
+.order-detail .td-max-width-md {max-width:140px;}
+.order-detail .button-toggle-table {position:relative;top:-1px;padding:8px 34px 8px 6px;background-image:url(//image.wemakeprice.com/images/resources/mng/pages/claim/button-toggle-table.png);background-repeat:no-repeat;background-position:100% 0;}
+.order-detail .button-toggle-table.active {background-position:100% -20px;}
+.order-detail .table tr.cancel td {color:#ee5555}
+.order-detail .button.member-number-change {margin-left:18px;min-width:62px;}
+
+/* 숫자 전환 레이어*/
+.layer-change-exchange .wrap-form-address {padding:0px 18px 12px 18px!important;border-top-color:#eee!important;}
+.layer-change-exchange .wrap-form-address .wrap-title {overflow:hidden;position:relative;margin-bottom:12px;padding:7px 0px 6px 0px;border-bottom:1px solid #eee;}
+.layer-change-exchange .wrap-form-address .wrap-title .title {float:left;font-size:11px;color:#666;line-height:21px;}
+.layer-change-exchange .wrap-form-address .wrap-title .wrap-button {float:right;font-size:0px;}
+.layer-change-exchange .wrap-form-address .wrap-title .wrap-button .ui.button {width:55px}
+.layer-change-exchange .wrap-form-address dl {display:table;float:left}
+.layer-change-exchange .wrap-form-address dl.phone {float:right;}
+.layer-change-exchange .wrap-form-address dl dt,
+.layer-change-exchange .wrap-form-address dl dd {position:relative;display:table-cell;vertical-align:top;font-size:11px;line-height:21px;}
+.layer-change-exchange .wrap-form-address dl dt {width:47px;padding-left:6px;}
+.layer-change-exchange .wrap-form-address dl dt:before {display:block;content:'';position:absolute;top:9px;left:0px;width:2px;height:2px;background-color:#666;}
+.layer-change-exchange .wrap-form-address dl.name dd {width:170px;}
+.layer-change-exchange .wrap-form-address dl.phone .ui.form.inline {font-size:inherit;}
+.layer-change-exchange .wrap-form-address dl.phone dt {width:69px;}
+.layer-change-exchange .wrap-form-address dl.phone select {width:60px !important;}
+.layer-change-exchange .wrap-form-address dl.phone input {width:50px !important;}
+.layer-change-exchange .wrap-form-address dl.phone .dash {margin:0px 2px 0px 2px;font-size:11px;vertical-align:middle;}
+.layer-change-exchange .wrap-form-address dl.address {width:100%;margin-top:5px;}
+.layer-change-exchange .wrap-form-address dl.address ul li {margin-bottom:5px;}
+.layer-change-exchange .wrap-form-address dl.address ul li:last-child {margin-bottom:0px;}
+.layer-change-exchange .wrap-form-address dl.address ul li:first-child input {width:88px}
+.layer-change-exchange .wrap-form-address dl.address ul li:first-child button {width:77px}
+
+
+/**
+* 팝업
+*/
+
+/*공통*/
+.wrap-popup table th.option-price,
+.wrap-popup table td.option-price {padding:11px 50px 10px 0px !important;text-align:right !important}
+.wrap-popup .ui.button.small {min-width:55px;height:21px;padding-top:3px;}
+.wrap-popup .notice-box {padding:12px 15px 10px;border:1px solid #e8f5f6;background-color:#f2f8f9;}
+.wrap-popup .notice-box p.fa {position:relative;padding-left:21px;font-size:11px;color:#16949b;line-height:14px;}
+.wrap-popup .notice-box p.fa-exclamation-circle:before {position:absolute;top:0px;left:0px;color:#9cd1d5;font-size:16px;}
+
+
+/* 환불예정 확인 */
+.popup-refund-confirm-table {border:2px solid #eee;}
+.popup-refund-confirm-table table caption {display:none;font-size:0px;}
+.popup-refund-confirm-table table th,
+.popup-refund-confirm-table table td {background-image:url(//image.wemakeprice.com/images/resources/mng/pages/claim/ico-popup-table.png);background-repeat:no-repeat;}
+.popup-refund-confirm-table table th {height:79px;background-color:#fff;font-family:Tahoma;font-size:20px;text-align:right;}
+.popup-refund-confirm-table table td {height:100px;background-color:#f9f9f9}
+.popup-refund-confirm-table table th em {position:relative;top:-1px;font-size:16px;font-weight:bold;}
+.popup-refund-confirm-table table th.order-price {padding:22px 57px 0px 0px;background-position:0px 0px;}
+.popup-refund-confirm-table table th.dc-price {padding:22px 57px 0px 0px;background-position:0px -79px;}
+.popup-refund-confirm-table table th.refund-total-price {padding:22px 69px 0px 0px;background-position:0px -158px;}
+.popup-refund-confirm-table table td.order-price {padding: 22px 17px 0px 29px;background: #f9f9f9;vertical-align: top;}
+.popup-refund-confirm-table table td.dc-price {padding:22px 17px 0px 41px;background-position:0px -237px;vertical-align: top;}
+.popup-refund-confirm-table table td.refund-total-price {padding:22px 29px 0px 41px;background-position:0px -237px;vertical-align: top;}
+.popup-refund-confirm-table table dl dt,
+.popup-refund-confirm-table table dl dd {line-height:14px;}
+.popup-refund-confirm-table table dl dt {float:left;color:#999;margin-bottom: 8px;font-size:11px;}
+.popup-refund-confirm-table table dl dd {overflow:hidden;display:block;margin-bottom: 8px;font-size:12px;text-align:right;}
+
+/*환불,취소,주문취소,교환 팝업 */
+.popup-request .box-gray {padding:10px 15px;background-color:#f3f3f3;}
+.popup-request .box-gray select {width: 260px !important;}
+.popup-request .box-gray input {width: 444px !important;}
+.popup-request .ui.button.refund-confirm {width:160px !important}
+
+/*환불예정 금액변경 */
+.popup-request .refund-change-price {background-color:#f3f3f3;}
+.popup-request .refund-change-price .checkbox-area {padding:9px 15px;}
+.popup-request .refund-change-price .contents {padding:1px 15px 15px 15px;}
+.popup-request .refund-change-price .contents > .inner {overflow:hidden;padding:30px;background-color:#fff;}
+.popup-request .refund-change-price .contents > .inner table th,
+.popup-request .refund-change-price .contents > .inner table td {padding:7px 0px 6px;}
+.popup-request .refund-change-price .contents > .inner table th {border-top-color:#ddd;}
+.popup-request .refund-change-price .contents > .inner table td .fa-plus {position:relative;top:1px;margin:0px 6px 0px 3px;color:#ccc;font-size:16px;vertical-align:middle;}
+.popup-request .refund-change-price .contents > .inner table td.seting {text-align:right;padding:7px 12px 6px 0px;}
+.popup-request .refund-change-price .contents > .inner table td input {width:75px}
+.popup-request .refund-change-price .contents > .inner .change-reason th,
+.popup-request .refund-change-price .contents > .inner .change-reason td {padding:7px 15px 6px;}
+.popup-request .refund-change-price .contents > .inner .change-reason .msg {margin:7px 0px 4px;}
+.popup-request .refund-change-price .contents > .inner .ui.form.inline .input {margin-left:3px;margin-right:1px;font-size:11px;text-align:right;}
+.popup-request .refund-change-price .contents > .inner .ui.form.inline .text {margin-left:0px;font-size:11px;}
+
+
+/* 환불수단 변경 */
+.popup-request .refund-method .radio-area {position:relative;padding:13px 15px 12px;background-color:#f9f9f9;font-size:0px;letter-spacing:0px;word-spacing:0px;}
+.popup-request .refund-method .radio-area span {font-weight:bold;}
+.popup-request .refund-method select,
+.popup-request .refund-method input {width:170px !important;}
+.popup-request .refund-method .ui.button.small {width:76px;height:21px;padding-top:3px;}
+
+/*반품상세 테이블 */
+.popup-request .goods-detail-table p.msg {margin-bottom:4px;}
+.popup-request .goods-detail-table .check-goods .msg {margin-right:10px;}
+.popup-request .wrap-form-address {padding:0px 15px 0px 15px;border:1px solid #eee;background-color:#f9f9f9;}
+.wrap-form-address .wrap-title {overflow:hidden;position:relative;padding:7px 0px 6px 0px;border-bottom:1px solid #eee;}
+.wrap-form-address .wrap-title .title {float:left;font-size:11px;color:#666;line-height:21px;}
+.wrap-form-address .wrap-title .wrap-button {float:right;font-size:0px;}
+.wrap-form-address .wrap-title .wrap-button .ui.button {width:55px}
+.wrap-form-address .wrap-list {padding:12px 17px 12px 0px;}
+.wrap-form-address .wrap-list dl {display:table;float:left}
+.wrap-form-address .wrap-list dl.phone {float:right;}
+.wrap-form-address .wrap-list dl dt,
+.wrap-form-address .wrap-list dl dd {position:relative;display:table-cell;vertical-align:top;font-size:11px;line-height:21px;}
+.wrap-form-address .wrap-list dl dt {width:47px;padding-left:6px;}
+.wrap-form-address .wrap-list dl dt:before {display:block;content:'';position:absolute;top:9px;left:0px;width:2px;height:2px;background-color:#666;}
+.wrap-form-address .wrap-list dl.name dd {width:170px;}
+.wrap-form-address .wrap-list dl.phone .ui.form.inline {font-size:inherit;}
+.wrap-form-address .wrap-list dl.phone dt {width:69px;}
+.wrap-form-address .wrap-list dl.phone select {width:60px !important;}
+.wrap-form-address .wrap-list dl.phone input {width:50px !important;}
+.wrap-form-address .wrap-list dl.phone .dash {margin:0px 2px 0px 2px;font-size:11px;vertical-align:middle;}
+.wrap-form-address .wrap-list dl.address {width:100%;margin-top:5px;}
+.wrap-form-address .wrap-list dl.address ul li {margin-bottom:5px;}
+.wrap-form-address .wrap-list dl.address ul li:last-child {margin-bottom:0px;}
+.wrap-form-address .wrap-list dl.address ul li:first-child input {width:88px}
+.wrap-form-address .wrap-list dl.address ul li:first-child button {width:77px}
+.popup-request .select-delivery {padding:15px;border:1px solid #eee;background-color:#f9f9f9}
+.select-delivery select,
+.select-delivery input {width:170px !important;}
+
+/*배송정보*/
+.popup-delivery-detail .recipient-table table th,
+.popup-delivery-detail .recipient-table table td {padding:7px 15px 6px}
+.popup-delivery-detail .recipient-table .name input {width:170px !important;}
+.popup-delivery-detail .recipient-table .phone select,
+.popup-delivery-detail .recipient-table .safe-phone select {width:60px !important;}
+.popup-delivery-detail .recipient-table .phone input,
+.popup-delivery-detail .recipient-table .safe-phone input {width:50px !important;}
+.popup-delivery-detail .recipient-table .phone .dash,
+.popup-delivery-detail .recipient-table .safe-phone .dash {margin:0px 2px 0px 2px;font-size:11px;vertical-align:middle;}
+.popup-delivery-detail .recipient-table .safe-phone .text {margin-right:15px;color:#666;font-size:11px;line-height:16px;}
+.popup-delivery-detail .recipient-table .safe-phone .checkbox {position:relative;padding-left:16px;margin-right:15px;}
+.popup-delivery-detail .recipient-table .safe-phone .checkbox:before {display:block;content:'';position:absolute;top:3px;left:0px;width:1px;height:10px;background-color:#ddd}
+.popup-delivery-detail .recipient-table .address ul li {margin-bottom:5px;}
+.popup-delivery-detail .recipient-table .address ul li:last-child {margin-bottom:0px;}
+.popup-delivery-detail .recipient-table .address ul li:first-child input {width:88px !important;}
+.popup-delivery-detail .recipient-table .address ul li:first-child button {width:77px !important;}
+
+/*티켓정보*/
+.popup-ticket-detai .wrap-ticket-confirm {padding:0px 30px 22px 30px;border:3px solid #eee}
+.popup-ticket-detai .wrap-ticket-confirm .com.popup-wrap-title.sub {margin-top:27px}
+
+/*할인쿠폰정보 */
+.popup-coupon-publish .max-td-width {max-width:80px;}
+.popup-coupon-publish .set-period-table .text {font-size:11px !important;}
+.popup-coupon-publish .set-period-table input {width:39px !important;text-align:center;}
+
+/**
+*상담이력
+*/
+/*1:1 문의이력*/
+.popup-consult .consult-record th {padding:14px 0px 13px;}
+.popup-consult .consult-record td {padding:10px 0px 7px;line-height:17px;}
+.popup-consult .consult-record td.title {padding:10px 30px 7px 15px;text-align:left;background-color:#fff;background-image:url(button-consult-view.png);background-repeat:no-repeat;background-position:100% 100%;word-break:break-all;}
+.popup-consult .consult-record td.title.active {background-image:url(button-consult-view-active.png);}
+.popup-consult .consult-record .consult-result td {padding:0px 20px;background-color:#f5f9fa;text-align:left;}
+.popup-consult .consult-record .consult-result td dl {overflow:hidden;border-bottom:1px solid #eee;}
+.popup-consult .consult-record .consult-result td dl:last-child {border-bottom:none}
+.popup-consult .consult-record .consult-result td dl dt {float:left;padding:18px 0px 15px;width:76px;color:#16949b;font-weight:bold;}
+.popup-consult .consult-record .consult-result td dl dd {padding:18px 0px 15px;overflow:hidden;display:block;}
+.popup-consult .consult-record strong {display:block;color:#16949b;}
+.popup-consult .pagination {margin-top:20px !important;}
+
+/*전화상담 이력*/
+.popup-consult .consult-record.phone td.title {padding:10px 28px 7px 15px;text-align:left;}
+.popup-consult .consult-record.phone .consult-result td {padding:10px 0px 7px;background-color:#f5f9fa;text-align:center;}
+.popup-consult .consult-record.phone .consult-result td.title {padding:10px 28px 7px 15px;background-image:none;text-align:left;}
+
+/* head Fixed Table */
+.wrap-head-fixed-table  {position:relative;padding-top:43px;margin-bottom:20px;border:1px solid #ddd;background-color:#f9f9f9;}
+.wrap-head-fixed-table > .inner {overflow-y:auto;overflow-x:hidden;max-height:260px;background-color:#fff;}
+.wrap-head-fixed-table > .inner > table {width:100%;line-height:1;}
+.wrap-head-fixed-table caption {display:none;}
+.wrap-head-fixed-table > .inner > table {}
+.wrap-head-fixed-table > .inner > table caption {display:none;}
+.wrap-head-fixed-table > .inner > table thead {display:block;position:absolute;top:0;}
+.wrap-head-fixed-table > .inner > table tr.hidden_cell td {height:0;min-height:0;padding:0;font-size:0;line-height:0;}
+.wrap-head-fixed-table > .inner > table thead th {height:43px;padding:0px;border-right:1px solid #eee;border-bottom:1px solid #ddd;background-color:#f9f9f9;font-weight:bold;color:#666;line-height:43px;font-size:12px;text-align:center;}
+.wrap-head-fixed-table > .inner > table tbody td {height:33px;min-height:33px;padding:15px;border-top:1px solid #eee;border-right:1px solid #eee;color:#666;font-size:11px;text-align:center;}
+.wrap-head-fixed-table > .inner > table tbody tr.hidden_cell + tr td {border-top:none;}
+.wrap-head-fixed-table > .inner > table thead th:last-child,
+.wrap-head-fixed-table > .inner > table tbody td:last-child {border-right:none;}
+.wrap-head-fixed-table > .inner > table tr.deal td{border-top-color:#ddd;background-color:#f5f9fa;}
+.wrap-head-fixed-table > .inner > table tr.deal td:nth-child(2){padding:8px 15px 7px;line-height:18px;}
+.wrap-head-fixed-table > .inner > table tr.deal td.price {text-align:right;padding:16px 56px 14px 0px;}
+.wrap-head-fixed-table > .inner > table tr td .ticket {position:relative;padding-left:10px;}
+.wrap-head-fixed-table > .inner > table tr td .ticket:before {display:block;content:'';position:absolute;left:0px;bottom:2px;width:5px;height:5px;border:1px solid #666;border-width:0px 0px 1px 1px;background-color:transparent;}
+.wrap-head-fixed-table > .inner > table td.option {padding:8px 15px 7px;line-height:18px;}
+.wrap-head-fixed-table > .inner > table.text-size-md td,
+.wrap-head-fixed-table > .inner > table.text-size-md th {font-size:12px;}
+.wrap-head-fixed-table > .inner > table td.text-size-sm,
+.wrap-head-fixed-table > .inner > table th.text-size-sm {font-size:11px;}
+
+/* 추가된 클래스 2016.8.24 */
+/* 팝업 관련 선반영 수정 */
+.com.wrap-popup .bottom-box {
+/* 넓이를 퍼센트로 하지 않음 - 오차 발생의 여지때문 */
+width: 682px;padding: 26px;border-width: 3px;border-style: solid;border-color: #eee;}
+.com.popup-wrap-title.sub.margin-reset {margin: 0}
+.com.wrap-popup .bottom-box .empty-messege {display: block;text-align: center;line-height: 300px;font-size: 12px;font-weight: bold;color: #ccc;}
+.phone-num .phone-num-width {width: 60px;}
+.phone-num .phone-num-width.force-inline {display: inline!important;}
+.phone-num .phone-num-dash {position: relative;top: 2px;}
+.com.wrap-popup .bottom-box .max-typing {float: right;font-size: 11px;position: relative;top: 5px;}
+.force-clear {float: inherit!important;}
+
+/* 추가된 클래스 2016.8.30 */
+.popup-ticket-detail td.bg-gray {background-color: #f9f9f9;}
+.popup-ticket-detail .ui.pagination li .on {color: #ee5555;}
+.com.wrap-popup .scroll-m {height: 300px;overflow-y: auto;}
+.com.wrap-popup .ticket-option-bg {background-color: #F5F9FA;}
+.com.wrap-popup tbody.last-border-bottom {border-bottom: 1px solid #eee;}
+
+/* 옵션 영역 - 셀렉트박스 부분 */
+.admin-option-select-box {position:relative;margin-bottom:5px;}
+.admin-option-select-box a {text-decoration: none;}
+.admin-option-select-box .selected {background:url(http://image.wemakeprice.com/images/option/option_select_icon.png) no-repeat}
+.admin-option-select-box .selected {display:block;overflow:hidden;height:23px;padding:0 40px 0 10px;border:1px solid #ddd;background-color:#fff;background-position:100% 1px;font-size:11px;line-height:25px;color:#666;text-overflow:ellipsis;white-space:normal}
+.admin-option-select-box .selected span.text-abbr {display:block;overflow:hidden;text-overflow:ellipsis;white-space:normal}
+.admin-option-select-box.active {z-index:1;}
+.admin-option-select-box.active a {border-color:#ccc;background-position:100% -20px;}
+.admin-option-select-box.active ul {display:block;}
+.admin-option-select-box ul {display:none;overflow-y:auto;position:absolute;left:0;right:0;top:100%;max-height:270px;border:1px solid #ccc;border-top:0;background:#fff;}
+.admin-option-select-box ul a {display:block;position:relative;padding:6px 10px 4px;line-height:18px;font-size:11px;color:#393939;word-wrap: break-word;}
+.admin-option-select-box ul a:hover {background:#f5f5f5;}
+.admin-option-select-box ul .price-area {padding-right:100px}
+.admin-option-select-box ul .price-area .option-price {display:block;position:absolute;right:10px;top:5px;}
+
+.topline {width: 100.1%;height: 1px;background-color: #4C4C4C;}
+/* 한시적인 기능삭제
+.grid-box {position: relative;width: 100%;min-height: 10px;box-sizing: border-box;border-style: solid;border-width: 1px;border-color: #ddd;overflow: auto;background-color: #fff;}
+.grid-box.inline {display: inline-block;}*/
+.grid-box.topline-hidden {border-top: 0px;}
+
+/* 사이드바 상단 */
+.layout.aside .sidetop-button-group {padding: 0 0 22px 0;text-align: center;}
+.ui.button.small.sidetop {width: 74px;height: 26px;border: none;border-radius: 0;color: rgba(255, 255, 255, 0.7);background-color: #818CA2;}
+.min-w1280 {min-width: 1280px;}
+
+/* 탭 관련 - 미비 */
+ul.tabtab {width: 100%;height: 48px;line-height: 48px;background-color: #E9EEF4;}
+.layout.container li {display: inline-block;position: relative;min-width: 139px;margin-left: -4px;padding-left: 25px;cursor: pointer;}
+.layout.container li:hover {background-color: rgba(255, 255, 255, 0.4);}
+.layout.container li:after {content: '';position: absolute;top: 0;right: 0;width: 1px;height: 100%;background-color: #fff;}
+.layout.container li.tab-on {background-color: #fff;cursor: default;}
+.layout.container li.tab-small {min-width: 80px;}
+i.fa.fa-times {position: absolute;right: 8px;width: 40px;height: 48px;line-height: 48px;font-size: 15px;color: #626d83;text-align: center;cursor: pointer;opacity: .4;}
+i.fa.fa-times:hover {opacity: 1;}

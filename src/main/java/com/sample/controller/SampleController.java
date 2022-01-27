@@ -12,6 +12,6 @@ public class SampleController {
 
     @GetMapping("/main")
     public String main() {
-        return "sample main";
+        return "main..........";
     }
 }
