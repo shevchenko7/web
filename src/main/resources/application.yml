@@ -1,0 +1,90 @@
+server:
+  port: 8080
+  compression: # embedded tomcat 기동 시에 사용되는 설정. tomcat server 에서 실행할 경우는 server.xml 에 설정.
+    min-response-size: 1
+    enabled: true
+  servlet:
+    encoding:
+      charset: UTF-8
+      force-response: true
+
+spring:
+  application:
+    name: sample
+  profiles:
+    active: local # default profile
+
+  # jooq 를 사용하고 있을 경우에는 충돌이 발생할 수 있습니다.
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jooq.JooqAutoConfiguration
+
+  # zipkin, sleuth 설정 시작.
+  sleuth:
+    rxjava.schedulers.hook.enabled: false
+    enabled: true
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    enabled: false
+  # zipkin, sleuth 설정 끝.
+
+  cache:
+    type: ehcache
+
+  # security config
+  security:
+    user:
+      name: wmp
+      password: wemake
+      roles: ADMIN
+
+# actuator
+management:
+  endpoints:
+    web:
+      base-path: /servicemanager
+      exposure:
+        include: "*"
+
+#endpoint security 설정
+security:
+  enabled: false
+
+# logging config
+#logging:
+#  config: classpath:logback-spring.xml
+#  file:
+#    name: ${spring.application.name}  # logback-spring.xml 에서 .log 붙여준다.
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+# couchbase config
+cache:
+  couchbase:
+    username: wemakeprice
+    password: wemakeprice
+    ip:
+      - 127.0.0.1:8091
+    bucket: public-cache
+    env:
+      key-value: 1
+      max-endpoints: 10
+
+resource:
+  resource-routes:
+    weather:
+      url: http://apis.data.go.kr
+    authority:
+      url: http://authority-api-dev.wemakeprice.com:8080
+
+  resource-config:
+    read-timeout: 60000
+    connect-timeout: 5000
+
+
+---
